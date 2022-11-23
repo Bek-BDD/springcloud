@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: BookCommand
+          uri: lb://BookCommand
+          predicates:
+            - Path=/bookservice/**
+        - id: BookQuery
+          uri: lb://BookQuery
+          predicates:
+            - Path=/books/**
+
+        - id: ReviewService
+          uri: lb://ReviewService
+          predicates:
+            - Path=/reviews/**
+
+        - id: BookBorrowing
+          uri: lb://BorrowingService
+          predicates:
+            - Path=/borrowings/**
+
+        - id: CustomerService
+          uri: lb://CustomerService
+          predicates:
+            - Path=/customers/**
