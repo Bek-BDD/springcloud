@@ -1,10 +1,10 @@
 spring:
-    data:
+  data:
     mongodb:
       host: localhost
       port: 27017
       database: librarydb
-
+      
 eureka:
   client:
     serviceUrl:
