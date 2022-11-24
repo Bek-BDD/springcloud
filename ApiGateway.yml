@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   application:
     name: ApiGateway
@@ -27,6 +29,5 @@ spring:
           uri: lb://CustomerService
           predicates:
             - Path=/customers/**
-server:
-  port: 8080
+
 
