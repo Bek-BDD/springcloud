@@ -10,11 +10,11 @@ spring:
         - id: BookCommand
           uri: lb://BookCommand
           predicates:
-            - Path=/bookservice/**
+            - Path=/command/**
         - id: BookQuery
           uri: lb://BookQuery
           predicates:
-            - Path=/books/**
+            - Path=/query/**
 
         - id: ReviewService
           uri: lb://ReviewService
