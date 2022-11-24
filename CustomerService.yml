@@ -4,13 +4,4 @@ server:
 spring:
   application:
     name: CustomerService
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: librarydb
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
