@@ -1,7 +1,7 @@
 server:
-  port: 8084
+  port: 8081
 
 spring:
   application:
-    name: BorrowingService
+    name: BookCommand
 
