@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   cloud:
     gateway:
@@ -25,5 +27,3 @@ spring:
           uri: lb://CustomerService
           predicates:
             - Path=/customers/**
-server:
-  port: 8080
