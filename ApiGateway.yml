@@ -25,3 +25,5 @@ spring:
           uri: lb://CustomerService
           predicates:
             - Path=/customers/**
+server:
+  port: 8080
