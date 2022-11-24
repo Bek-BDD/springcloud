@@ -3,5 +3,5 @@ server:
 
 spring:
   application:
-    name: BorrowingService
+    name: BookCommand
 
