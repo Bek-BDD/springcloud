@@ -4,8 +4,7 @@ server:
 spring:
   application:
     name: ReviewService
-    
-  
+
 kafka:
     bootstrap-servers: localhost:9092
     consumer:
