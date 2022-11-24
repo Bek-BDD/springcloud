@@ -1,10 +1,10 @@
 server:
   port: 8082
-  
+
 spring:
   application:
     name: BookQuery
-    
+
 kafka:
     bootstrap-servers: localhost:9092
     consumer:
